@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the game!Repeat back the patterns by pressing buttons
+      <a href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+        >~glitch-hello-website
+      </a>
+      
+    </p>
+    
+<button id  = "startBtn" onclick="startgame()">Start</button>
+<button id  = "stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+    
+    <div id = "gameButtonArea">
+       <button 
+               id  = "button1" 
+               onclick="guess(1)" 
+               onmousedown="startTone(1)" 
+               onmouseup="stopTone()"
+        ></button>
+        <button 
+                id  = "button2" 
+                onclick="guess(1)" 
+                onmousedown="startTone(2)" 
+                onmouseup="stopTone()"
+        ></button>
+         <button 
+                id  = "button3" 
+                onclick="guess(1)" 
+                onmousedown="startTone(3)" 
+                onmouseup="stopTone()"
+          ></button>
+       <button 
+              id  = "button4" 
+              onclick="guess(1)" 
+              onmousedown="startTone(4)" 
+              onmouseup="stopTone()"
+        ></button>
+    
+    </div> 
+    //
+    <div class="row justify-content-center">
+      <div class="col-4 text-left">
+        <h5>
+          Attempts left: <span id="tries">3</span>
+          <br />
+          Time Left: <span id="count">10</span> seconds
+        </h5>
+      </div>
+      
+      <div class="col-4 text-right">
+        <h5>
+          Max Score: <span id="maxScore">0</span>
+          <br />
+          Current Score: <span id="currentScore">0</span>
+        </h5>
+      </div>
+    
+  <div class = "hidden">
+    
+  
+    </div>
+    
+  </body>
+</html>
+
+
